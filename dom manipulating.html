@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            dom manipulating
+        </title>
+    </head>
+    <body>
+        <div class="container" id="main">
+            <ul id="nav">
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>service</li>
+            </ul>
+        </div>
+        <div class="container">
+            another container
+        </div>
+        <script>
+          
+           let a= document.getElementById('main');
+           console.log(a);
+           let b= document.getElementById('nav');
+           console.log(b);
+                 let c=document.getElementsByClassName('container');
+                 console.log(c);  
+                 let k=document.querySelector('#nav')  ;
+                 console.log(k);  
+                 let l=document.querySelectorAll('#nav>li');
+                 console.log(l);
+        </script>
+    </body>
+</html:5>

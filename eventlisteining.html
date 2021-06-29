@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            events and events listening
+        </title>
+    </head>
+    <style>
+        #btn{
+            padding:10px 14px;
+            border-radius: 10px;
+            color: white;
+            background-color: cadetblue;
+        }
+
+    </style>
+    <body>
+        <h1>
+            this is the heading.
+        </h1>
+        <p id="pa">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptate autem eum in corrupti impedit necessitatibus error ipsam? Nihil at sunt aut aliquid ratione expedita, pariatur magnam deleniti laborum. Excepturi tempora unde dolorem modi iste autem animi exercitationem error blanditiis eligendi, culpa fugiat labore, delectus eaque libero officiis porr Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ducimus quo hic eligendi corporis velit aperiam, reiciendis et nihil inventore harum voluptatibus doloremque minima accusantium impedit animi officiis eveniet incidunt perferendis deserunt itaque iure excepturi at autem! Sapiente, dolores tenetur? Beatae laboriosam porro quae atque esse corrupti ut animi quidem? Expedita voluptas temporibus adipisci nemo facilis rem repellat sed, delectus perferendis. Eius dolorum totam voluptas quibusdam eum, quis mollitia maxime nulla nihil. Reprehenderit sequi quo corporis laborum nam amet eos!
+
+        </p>
+        
+        <button id="btn" onclick="togglepara()"> show/hide</button>
+
+        <script>
+          
+              let aa =document.getElementById('pa');
+            function togglepara(){
+
+            
+           
+            let btn =document.getElementById('btn');
+            if(aa.style.display!='block'){
+                aa.style.display='block';
+            }
+            else {
+                aa.style.display='none';
+            }
+        }
+        aa.addEventListener('mouseover', function run(){
+            console.log('your are inside para');
+           
+        });
+        aa.addEventListener('mouseout',function run(){
+            console.log('you are outside of para');
+           
+        });
+        
+            </script>
+
+    </body>
+</html:5>
