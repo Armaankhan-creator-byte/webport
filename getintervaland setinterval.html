@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            set interval and get interval
+        </title>
+    </head>
+    <body>
+        
+      
+        <p>time is <span id="tm"></span></p>
+        
+        
+    </body>
+    <script>
+      /*function greet( name, surname)  
+      {
+          console.log("good morning "+" "+name+surname);
+      }
+      let b=setTimeout(greet,5000,"armaan","khan");
+     //let a= setTimeout(greet,5000,"armaan","khan");
+     console.log(b);
+     clearTimeout(b);*/
+
+/*function greet( name, surname)  
+      {
+          console.log("good morning "+" "+name+surname);
+      }
+        let b=setInterval(greet,2000,"rahul","singh"); 
+        console.log(b);
+        clearInterval(b);
+        */    
+        
+function time() {
+   let d= new Date(); 
+let k=document.getElementById('tm').innerHTML=d;
+console.log(k);
+}
+setTimeout(time,2000);
+    
+
+
+
+
+    
+
+    </script>
+</html:5>
